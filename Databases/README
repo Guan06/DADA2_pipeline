@@ -1,0 +1,25 @@
+sh_general_release_dynamic_04.02.2020.fasta
+
+	downloaded from UNITE, general FASTA releases
+    https://doi.org/10.15156/BIO/786368
+    From https://plutof.ut.ee/#/doi/10.15156/BIO/786368
+
+    When using this resource, please cite it as follows:
+    Abarenkov, Kessy; Zirk, Allan; Piirmann, Timo; Pöhönen, Raivo;
+    Ivanov, Filipp; Nilsson, R. Henrik; Kõljalg, Urmas (2020):
+    UNITE general FASTA release for Fungi. Version 04.02.2020.
+    UNITE Community. https://doi.org/10.15156/BIO/786368
+
+Includes singletons set as RefS (in dynamic files).
+
+UNITE_public_02.02.2019.fasta
+    
+    downloaded from UNITE, Full "UNITE + INSD" dataset
+    https://plutof.ut.ee/#/doi/10.15156/BIO/786347
+
+utax_reference_dataset_02.02.2019.fasta
+
+    downloaded from UNITE, USEARCH/UTAX release
+    This reference file can be used for ITS1-only or ITS2-only sequences if 
+    parameters trained on ITS1 or 2 only ('taxconfs' files) are used. 
+    ITS regions can be extracted using the ITSx tool.

@@ -1,10 +1,12 @@
 Pipeline for data processing for amplicon sequencing data, suitable for
 bacterial, fungal and oomycetal community profiling.
 Usearch is needed for preprocessing the data, specifically, demultiplexing.  
+
 To run the workflow:
+
 1) Prepare your input files and put it in the data_dir (later defined in config.sh)
 
-Name sequence fastq files as:
+Name sequence fastq files as:  
     prefix_forward_reads.fastq.gz  
     prefix_reverse_reads.fastq.gz  
     prefix_barcodes.fastq.gz  

@@ -29,5 +29,5 @@ oomycetes_FWD="CGGAAGGATCATTACCAC"
 oomycetes_REV="AGCCTAGACATCCACTGCTG"
 
 ## set the list of sequencing data
-## e.g. 001, should be the same as "prefix" in README.md
-l_list_miseq="001"
+## should be the same as "prefix" in README.md
+l_list_miseq="prefix"

@@ -29,4 +29,5 @@ Prepare mapping file and name them as:
     Define the profiled kingdom and amplification primer set if applicable(for fungi and oomycetes)  
 
 4) Run scripts step by step / or run the all_in_one.sh (for MiSeq data only)
+
     sh all_in_one.sh

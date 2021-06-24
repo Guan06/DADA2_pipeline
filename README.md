@@ -40,11 +40,9 @@ Prepare mapping file and name them as:
     10 (or 20 to be more strict) samples, remove the demultiplexed file, where
     you could find in subfolder under the same folder(e.g. sample OD1):
 
-    rm $working_dir/01.split_fq/$l_list_miseq/Bac_forward/out/OD1.fastq  
-    ## forward read file of this sample
+    rm $working_dir/01.split_fq/$l_list_miseq/Bac_forward/out/OD1.fastq  ## forward read file of this sample  
 
-    rm $working_dir/01.split_fq/$l_list_miseq/Bac_reverse/out/OD1.fastq  
-    ## reverse read file of the same sample
+    rm $working_dir/01.split_fq/$l_list_miseq/Bac_reverse/out/OD1.fastq  ## reverse read file of the same sample  
 
     Then run the later steps as follow:
 

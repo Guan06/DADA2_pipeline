@@ -28,6 +28,26 @@ Prepare mapping file and name them as:
     Define the working_dir and data_dir in config file (./config.sh)  
     Define the profiled kingdom and amplification primer set if applicable(for fungi and oomycetes)  
 
-4) Run scripts step by step / or run the all_in_one.sh (for MiSeq data only)
 
-    sh all_in_one.sh
+4) Run scripts step by step or all together (take MiSeq data as example here)
+    ./step1_demultiplex.sh
+
+    Checking the output in the folder (take Bacteria as example here):
+
+    less $working_dir/01.split_fq/$l_list_miseq/Bac_forward/split_library_log.txt
+
+    In this file, the number of reads were shown and for those who has less than
+    10 (or 20 to be more strict) samples, remove the demultiplexed file, where
+    you could find in subfolder under the same folder(e.g. sample OD1):
+
+    rm ./out/OD1.fastq                  ## forward read file of this sample
+    rm ../Bac_reverse/out/OD1.fastq     ## reverse read file of the same sample
+
+    Then run the later steps as follow:
+
+    ./step2_dada2.sh
+    ./step3_get_ASV_table.sh
+
+    or
+
+    ./all_in_one.sh

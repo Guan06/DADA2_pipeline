@@ -20,7 +20,7 @@ Prepare mapping file and name them as:
 
 2) Validate the prepared mapping file
 
-    ./activate  
+    ./activate.sh  
     validate_mapping_file.py -m $data_dir/prefix_mapping.txt -o ./
 
 3) Edit config file:

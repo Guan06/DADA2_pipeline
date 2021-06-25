@@ -6,7 +6,7 @@ set -e
 
 # load functions
 scripts_dir=`dirname $0`
-source $scripts_dir/activate
+source $scripts_dir/activate.sh
 source $scripts_dir/config.sh
 
 log() {

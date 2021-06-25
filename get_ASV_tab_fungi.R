@@ -29,9 +29,13 @@ nc <- ncol(asv)
 map <- data.frame(ASV_ID = paste0("ASV_", seq(1 : nc)),
                   Sequence = colnames(asv))
 
+## filter ASVs with not more than 50 nt
+asv_filter <- asv[, nchar(colnames(asv)) > 50]
+dim(asv_filter)
+
 ## assign taxonomy
-unite.ref <- "./Databases/sh_general_release_dynamic_04.02.2020.fasta"
-taxa <- assignTaxonomy(asv, unite.ref, multithread = 40, tryRC = TRUE)
+unite.ref <- "/biodata/dep_psl/grp_psl/guan/DADA2_pipeline/Databases/sh_general_release_dynamic_04.02.2020.fasta"
+taxa <- assignTaxonomy(asv_filter, unite.ref, multithread = 40, tryRC = TRUE)
 rownames(taxa) <- map$ASV_ID[match(rownames(taxa), map$Sequence)]
 
 write.table(taxa, paste0(output, "ASV_taxonomy_unite.txt"),

@@ -28,15 +28,15 @@ map <- data.frame(ASV_ID = paste0("ASV_", seq(1 : nc)),
                   Sequence = colnames(asv))
 
 ## assign taxonomy
-taxtrain1 <- "./Databases/silva_nr_v132_train_set.fa.gz"
+taxtrain1 <- "/biodata/dep_psl/grp_psl/guan/DADA2_pipeline/Databases/silva_nr_v132_train_set.fa.gz"
 taxa1 <- assignTaxonomy(asv, taxtrain1, multithread = 40)
 rownames(taxa1) <- map$ASV_ID[match(rownames(taxa1), map$Sequence)]
 
-taxtrain2 <- "./Databases/rdp_train_set_16.fa.gz"
+taxtrain2 <- "/biodata/dep_psl/grp_psl/guan/DADA2_pipeline/Databases/rdp_train_set_16.fa.gz"
 taxa2 <- assignTaxonomy(asv, taxtrain2, multithread = 40)
 rownames(taxa2) <- map$ASV_ID[match(rownames(taxa2), map$Sequence)]
 
-taxtrain3 <- "./Databases/gg_13_8_train_set_97.fa.gz"
+taxtrain3 <- "/biodata/dep_psl/grp_psl/guan/DADA2_pipeline/Databases/gg_13_8_train_set_97.fa.gz"
 taxa3 <- assignTaxonomy(asv, taxtrain3, multithread = 40)
 rownames(taxa3) <- map$ASV_ID[match(rownames(taxa3), map$Sequence)]
 
